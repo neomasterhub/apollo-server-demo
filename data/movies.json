@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "title": "Bad Samaritan",
+        "year": 2018,
+        "cast": [
+            "David Tennant",
+            "Robert Sheehan",
+            "Carlito Olivero",
+            "Kerry Condon",
+            "Jacqueline Byers"
+        ],
+        "genres": [
+            "Horror",
+            "Thriller"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Life of the Party",
+        "year": 2018,
+        "cast": [
+            "Melissa McCarthy",
+            "Maya Rudolph",
+            "Molly Gordon",
+            "Julie Bowen",
+            "Gillian Jacobs",
+            "Debby Ryan",
+            "Matt Walsh",
+            "Jacki Weaver"
+        ],
+        "genres": [
+            "Comedy"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Breaking In",
+        "year": 2018,
+        "cast": [
+            "Gabrielle Union",
+            "Billy Burke",
+            "Richard Cabral",
+            "Seth Carr",
+            "Levi Meaden",
+            "Ajiona Alexus",
+            "Christa Miller"
+        ],
+        "genres": [
+            "Drama",
+            "Thriller"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "The Seagull",
+        "year": 2018,
+        "cast": [
+            "Saoirse Ronan",
+            "Annette Bening",
+            "Corey Stoll",
+            "Billy Howle"
+        ],
+        "genres": [
+            "Thriller"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Terminal",
+        "year": 2018,
+        "cast": [
+            "Margot Robbie",
+            "Simon Pegg",
+            "Dexter Fletcher",
+            "Max Irons",
+            "Mike Myers"
+        ],
+        "genres": [
+            "Drama",
+            "Thriller"
+        ]
+    },
+    {
+        "id": 6,
+        "country_code": "US",
+        "title": "Deadpool 2",
+        "year": 2018,
+        "cast": [
+            "Ryan Reynolds",
+            "Josh Brolin",
+            "Zazie Beetz",
+            "Julian Dennison",
+            "Morena Baccarin",
+            "T. J. Miller",
+            "Brianna Hildebrand",
+            "Stefan Kapičić",
+            "Jack Kesy",
+            "Leslie Uggams",
+            "Karan Soni",
+            "Shioli Kutsuna",
+            "Eddie Marsan",
+            "Terry Crews",
+            "Bill Skarsgård",
+            "Lewis Tan",
+            "Rob Delaney"
+        ],
+        "genres": [
+            "Superhero",
+            "Action",
+            "Comedy"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Book Club",
+        "year": 2018,
+        "cast": [
+            "Jane Fonda",
+            "Candice Bergen",
+            "Mary Steenburgen",
+            "Diane Keaton"
+        ],
+        "genres": [
+            "Comedy"
+        ]
+    }
+]
