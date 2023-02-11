@@ -12,6 +12,7 @@ const typeDefs = `#graphql
         year: Int!
         cast: [String]!
         genres: [String]!
+        deprecated: Int @deprecated(reason: "deprecated lorem ipsum")
     }
     type Country {
         country_code: String!
