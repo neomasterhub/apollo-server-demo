@@ -26,14 +26,19 @@ const typeDefs = `#graphql
     type Director {
         id: ID!
         DOB: Date!
+        name: String!
     }
     type Query {
         movies (year: Int, country_code: String): [Movie]!
         directors (DOB: Date): [Director]!
     }
+    type Mutation {
+        addDirector(DOB: Date!, name: String!): Director
+    }
 `;
 
 const resolvers = {
+    Date: dateScalar,
     Movie: {
         country(parent, args, contextValue, info) {
             return countries
@@ -56,7 +61,21 @@ const resolvers = {
                 .filter(d => !args.DOB || d.DOB.getTime() == args.DOB.getTime());
         },
     },
-    Date: dateScalar,
+    Mutation: {
+        addDirector(_, payload) {
+            if (directors?.find(d => d.name == payload.name)) {
+                throw new Error(`A director with name ${payload.name} already exists`);
+            }
+
+            const director = {
+                id: new Date().getTime(),
+                ...payload
+            };
+            directors.push(director);
+
+            return director;
+        },
+    }
 };
 
 const server = new ApolloServer({

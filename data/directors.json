@@ -1,14 +1,17 @@
 [
     {
         "id": 1,
-        "DOB": "1981-01-11"
+        "DOB": "1981-01-11",
+        "name": " John Williams"
     },
     {
         "id": 2,
-        "DOB": "1975-05-21"
+        "DOB": "1975-05-21",
+        "name": "Liam Brown"
     },
     {
         "id": 3,
-        "DOB": "1969-12-17"
+        "DOB": "1969-12-17",
+        "name": "Stanley Jones"
     }
 ]
