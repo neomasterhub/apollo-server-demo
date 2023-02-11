@@ -9,6 +9,10 @@ import directors from './data/directors.json' assert { type: 'json' };
 
 const typeDefs = `#graphql
     scalar Date
+    input MovieSearchInput {
+        year: Int
+        country_code: String
+    }
     type Movie {
         id: ID!
         country_code: String
@@ -29,7 +33,7 @@ const typeDefs = `#graphql
         name: String!
     }
     type Query {
-        movies (year: Int, country_code: String): [Movie]!
+        movies (input: MovieSearchInput!): [Movie]!
         directors (DOB: Date): [Director]!
     }
     type Mutation {
@@ -48,7 +52,7 @@ const resolvers = {
     Query: {
         movies(parent, args, contextValue, info) {
             return movies
-                .filter(m => m.year === args.year && m.country_code == args.country_code);
+                .filter(m => m.year === args.input.year && m.country_code == args.input.country_code);
         },
         directors(parent, args, contextValue, info) {
             return directors
